@@ -42,6 +42,10 @@ class ConfigProvider
                     'paths' => [
                         // BASE_PATH . '/',
                     ],
+                    'ignore_annotations' => [
+                        'mixin',
+                    ],
+                    'class_map' => [],
                 ],
             ],
             'aspects' => [],
