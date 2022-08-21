@@ -49,7 +49,18 @@ class ConfigProvider
             'crontab' => [],
             'databases' => [],
             'dependencies' => [],
-            'listeners' => [],
+            'exceptions' => [
+                'handler' => [
+                    'http' => [
+                        // App\Exception\Handler\BusinessExceptionHandler::class,
+                    ],
+                ],
+            ],
+            'listeners' => [
+                Hyperf\ExceptionHandler\Listener\ErrorExceptionHandler::class,
+                Hyperf\Command\Listener\FailToHandleListener::class,
+            ],
+            'logger' => [],
             'middlewares' => [
                 'http' => [],
             ],
