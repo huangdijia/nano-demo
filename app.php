@@ -66,7 +66,11 @@ class ConfigProvider
             ],
             'processes' => [],
             'redis' => [],
-            'server' => [],
+            'server' => [
+                'settings' => [
+                    'daemonize' => (int) env('DAEMONIZE', 0),
+                ],
+            ],
         ];
     }
 }
