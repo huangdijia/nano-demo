@@ -88,7 +88,12 @@ Closure::bind(function () {
 $app = AppFactory::createBase('0.0.0.0', 9501);
 
 $app->get('/', function () {
-    return 'Hello Nano!';
+    $user = $this->request->input('user', 'nano');
+    $method = $this->request->getMethod();
+    return [
+        'message' => "Hello {$user}",
+        'method' => $method,
+    ];
 });
 
 $app->addCommand('nano', function () {
