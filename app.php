@@ -65,7 +65,7 @@ class ConfigProvider
                 'http' => [],
             ],
             'processes' => [],
-            'retdis' => [],
+            'redis' => [],
             'server' => [],
         ];
     }
@@ -82,6 +82,10 @@ Closure::bind(function () {
 }, null, Composer::class)();
 
 $app = AppFactory::createBase('0.0.0.0', 9501);
+
+$app->get('/', function () {
+    return 'Hello Nano!';
+});
 
 $app->addCommand('nano', function () {
     $this->info('Hello, Nano!');
