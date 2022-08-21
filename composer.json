@@ -1,0 +1,22 @@
+{
+    "name": "huangdijia/nano-demo",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "nano"
+    ],
+    "description": "Scale Hyperf application down to a single file",
+    "require": {
+        "hyperf/nano": "2.0.*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^1.0"
+    },
+    "scripts": {
+        "analyse": "phpstan analyse --memory-limit 512M -l 0 -c phpstan.neon",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "minimum-stability": "dev"
+}
