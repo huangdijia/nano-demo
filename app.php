@@ -22,9 +22,9 @@ class ConfigProvider
     public function __invoke()
     {
         return [
-            'app_name' => 'tracing-nano',
-            'app_env' => 'dev',
-            'scan_cacheable' => false,
+            'app_name' => env('APP_NAME', 'nano-demo'),
+            'app_env' => env('APP_ENV', 'dev'),
+            'scan_cacheable' => env('SCAN_CACHEABLE', false),
             StdoutLoggerInterface::class => [
                 'log_level' => [
                     LogLevel::ALERT,
