@@ -10,7 +10,8 @@
     "require": {
         "php": ">=8.0",
         "ext-swoole": ">=4.5",
-        "hyperf/nano": "dev-master"
+        "hyperf/nano": "dev-master",
+        "hyperf/signal": "~3.0.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
