@@ -29,6 +29,7 @@
     },
     "minimum-stability": "dev",
     "config": {
+        "optimize-autoloader": true,
         "sort-packages": true
     }
 }
