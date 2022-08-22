@@ -9,7 +9,6 @@
     "description": "Scale Hyperf application down to a single file",
     "require": {
         "php": ">=8.0",
-        "ext-swoole": ">=4.5",
         "hyperf/nano": "dev-master",
         "hyperf/signal": "~3.0.0"
     },
