@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 /**
- * This file is part of nano-demo.
+ * This file is part of foo/bar.
  *
  * @link     https://github.com/huangdijia/nano-demo
  * @contact  Huangdijia <huangdijia@gmail.com>
